@@ -1,22 +1,30 @@
 :root {
-    --video-studio-app-accent-color: 0, 0, 255;
-    --video-studio-app-mark-bg-color: 255, 255, 0;
-    --video-studio-app-color: 59, 67, 81;
-    --video-studio-app-background-color: 255, 255, 255;
-    --video-studio-app-backdrop-color: 0, 0, 0;
-    --video-studio-app-light-background-color: 225, 225, 225;
-    --video-studio-app-success-color: 30, 180, 20;
-    --video-studio-app-danger-color: 220, 53, 69;
-    --video-studio-app-warning-color: 215, 215, 0;
-    --video-studio-app-focus-box-shadow: 0 0 0 2px rgba(var(--video-studio-app-accent-color), 0.5);
+    --video-studio-body-color: 170, 194, 224;
+    --video-studio-body-accent-color: 255, 255, 255;
+    --video-studio-body-background-color: 12, 16, 22;
+    --video-studio-backdrop-color: 12, 16, 22;
+    --video-studio-mark-background-color: 255, 217, 0;
+    --video-studio-primary-color: 51, 206, 228;
+    --video-studio-accent-color: 46, 171, 191;
+    --video-studio-secondary-color: 33, 41, 51;
+    --video-studio-success-color: 153, 206, 27;
+    --video-studio-warning-color: 243, 187, 27;
+    --video-studio-danger-color: 232, 83, 25;
+    --video-studio-header-background-color: 18, 24, 32;
+    --video-studio-main-background-color: 24, 32, 42;
+    --video-studio-footer-background-color: 9, 12, 16;
+    --video-studio-card-background-color: 39, 48, 60;
+    --video-studio-card-background-hover-color: 51, 62, 76;
+    --video-studio-sidebar-background-color: 18, 24, 32;
+    --video-studio-focus-box-shadow: 0 0 0 2px rgba(var(--video-studio-accent-color), 0.5);
 }
 
 ::selection {
-    background-color: rgba(var(--video-studio-app-accent-color), 0.2);
+    background-color: rgba(var(--video-studio-accent-color), 0.2);
 }
 
 mark {
-    background-color: rgb(var(--video-studio-app-mark-bg-color));
+    background-color: rgb(var(--video-studio-mark-background-color));
 }
 
 *, *:before, *:after {
@@ -24,7 +32,7 @@ mark {
 }
 
 *[class*="video-studio-"]:focus {
-    box-shadow: var(--video-studio-app-focus-box-shadow);
+    box-shadow: var(--video-studio-focus-box-shadow);
     outline: none;
 }
 
@@ -37,8 +45,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .video-studio-body {
-    color: rgb(var(--video-studio-app-color));
-    background: rgb(var(--video-studio-app-background-color));
+    color: rgb(var(--video-studio-body-color));
+    background: rgb(var(--video-studio-body-background-color));
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     font-size: 1rem;
     text-rendering: optimizeLegibility;
@@ -57,7 +65,6 @@ h1, h2, h3, h4, h5, h6, p {
 .video-studio-app-container {
     max-width: 1200px;
     width: 100%;
-    background: red;
     min-height: 100%;
 }
 
